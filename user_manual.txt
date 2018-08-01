@@ -1,0 +1,8 @@
+Steps to run the code:
+1- Create a new folder in your drive "C:\" and change its name to "Code"
+2- Copy all provided files in "C:\Code"
+3- Install MeshLab software which is publicaly available at http://www.meshlab.net/#download
+4- During MeshLab installation, change the MeshLab directory to "C:\Program Files\VCG\MeshLab" 
+5- Open MATLAB 2016a and change the current directory to "C:\Code"
+6- Run "main.m" file in MATLAB
+7- This code outputs 4 images including the original depth image and its segmented image. It also outputs 4 values corresponding to weights of particle size: 2mm=<s<6mm, 6mm=<s<19mm, 19mm=<s<63mm, and 63mm=<s

@@ -1,0 +1,18 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Close Holes">
+  <Param description="Max size to be closed " type="RichInt" value="30000" tooltip="The size is expressed as number of edges composing the hole boundary" name="MaxHoleSize"/>
+  <Param description="Close holes with selected faces" type="RichBool" value="false" tooltip="Only the holes with at least one of the boundary faces selected are closed" name="Selected"/>
+  <Param description="Select the newly created faces" type="RichBool" value="true" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." name="NewFaceSelected"/>
+  <Param description="Prevent creation of selfIntersecting faces" type="RichBool" value="true" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." name="SelfIntersection"/>
+ </filter>
+ <filter name="Remove Isolated pieces (wrt Face Num.)">
+  <Param description="Enter minimum conn. comp size:" name="MinComponentSize" value="25" tooltip="Delete all the connected components (floating pieces) composed by a number of triangles smaller than the specified one" type="RichInt"/>
+ </filter>
+ <filter name="Close Holes">
+  <Param description="Max size to be closed " type="RichInt" value="30000" tooltip="The size is expressed as number of edges composing the hole boundary" name="MaxHoleSize"/>
+  <Param description="Close holes with selected faces" type="RichBool" value="false" tooltip="Only the holes with at least one of the boundary faces selected are closed" name="Selected"/>
+  <Param description="Select the newly created faces" type="RichBool" value="true" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." name="NewFaceSelected"/>
+  <Param description="Prevent creation of selfIntersecting faces" type="RichBool" value="false" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." name="SelfIntersection"/>
+ </filter>
+</FilterScript>
